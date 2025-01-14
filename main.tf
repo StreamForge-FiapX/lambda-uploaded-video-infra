@@ -63,6 +63,6 @@ resource "aws_lambda_function" "lambda_cad_clientes" {
   s3_key        = var.lambda_s3_key
   handler       = "main.lambda_handler"
   runtime       = "python3.13"
-  role          = aws_iam_role.lambda_auth_clientes_exec_role.arn
+  role          = aws_iam_role.lambda_uploaded_video_exec_role.arn
   timeout       = 60
 }
